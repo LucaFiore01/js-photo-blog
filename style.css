@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('img/cork.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #333;
+}
+
+main {
+    padding: 0 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .photo-board {
+        flex-direction: column;
+        align-items: center;
+    }
+    .photo {
+        width: 80%;
+        margin: 10px 0;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .photo-board {
+        justify-content: space-around;
+    }
+    .photo {
+        width: 45%;
+    }
+}
+
+.photo-board {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.photo {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    width: 300px;
+}
+
+.photo1 {
+    transform: rotate(-3deg);
+}
+
+.photo2 {
+    transform: rotate(7deg);
+}
+
+.photo3 {
+    transform: rotate(-5deg);
+}
+
+.photo4 {
+    transform: rotate(4deg);
+}
+
+.photo5 {
+    transform: rotate(-2deg);
+}
+
+.photo6 {
+    transform: rotate(6deg);
+}
+
+.photo img {
+    display: block;
+    max-width: 300px;
+    height: auto;
+}
+
+.photo p {
+    text-align: center;
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.pin {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+}
