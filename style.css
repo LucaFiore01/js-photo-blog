@@ -80,59 +80,117 @@ footer {
     justify-content: center;
     align-items: flex-start;
     padding: 20px;
-    height: 100vh;
-    width: 100vw;
-    box-sizing: border-box;
+    gap: 30px;
 }
 
 .photo {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    background-color: white;
+    padding: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     margin: 20px;
-    width: 300px;
+    width: 400px;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.photo1 {
-    transform: rotate(-3deg);
-}
-
-.photo2 {
-    transform: rotate(7deg);
-}
-
-.photo3 {
-    transform: rotate(-5deg);
-}
-
-.photo4 {
-    transform: rotate(4deg);
-}
-
-.photo5 {
-    transform: rotate(-2deg);
-}
-
-.photo6 {
-    transform: rotate(6deg);
+.photo:hover {
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
 }
 
 .photo img {
     display: block;
-    max-width: 300px;
+    width: 100%;
     height: auto;
+    border-radius: 2px;
 }
 
 .photo p {
     text-align: center;
-    margin: 10px 0 0 0;
+    margin: 12px 0;
     font-size: 14px;
     color: #555;
 }
 
+.photo p:first-of-type {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.date {
+    font-size: 12px;
+    color: #999;
+    font-style: italic;
+}
+
 .pin {
     position: absolute;
-    top: -10px;
+    top: -12px;
     left: 50%;
-    transform: translateX(-50%);
-    width: 20px;
-    height: 20px;
+    transform: translateX(-50%) rotate(-25deg);
+    transition: transform 0.3s ease;
+
+}
+
+.photo:hover .pin {
+    transform: translateX(-50%) rotate(-5deg);
+}
+
+/* Overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay.active {
+    display: flex;
+}
+
+.overlay-content {
+    position: relative;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#overlayImage {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: #333;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #000;
 }

@@ -11,41 +11,20 @@
         <h1>JS Photo Blog</h1>
     </header>
     <main>
-        <div class="photo-board">
-            <div class="photo photo1">
-                <img src="https://via.placeholder.com/300x200?text=Foto+1" alt="Foto 1">
-                <img src="img/pin.svg" alt="Puntina" class="pin">
-                <p>Descrizione della Foto 1</p>
-            </div>
-            <div class="photo photo2">
-                <img src="https://via.placeholder.com/300x200?text=Foto+2" alt="Foto 2">
-                <img src="img/pin.svg" alt="Puntina" class="pin">
-                <p>Descrizione della Foto 2</p>
-            </div>
-            <div class="photo photo3">
-                <img src="https://via.placeholder.com/300x200?text=Foto+3" alt="Foto 3">
-                <img src="img/pin.svg" alt="Puntina" class="pin">
-                <p>Descrizione della Foto 3</p>
-            </div>
-            <div class="photo photo4">
-                <img src="https://via.placeholder.com/300x200?text=Foto+4" alt="Foto 4">
-                <img src="img/pin.svg" alt="Puntina" class="pin">
-                <p>Descrizione della Foto 4</p>
-            </div>
-            <div class="photo photo5">
-                <img src="https://via.placeholder.com/300x200?text=Foto+5" alt="Foto 5">
-                <img src="img/pin.svg" alt="Puntina" class="pin">
-                <p>Descrizione della Foto 5</p>
-            </div>
-            <div class="photo photo6">
-                <img src="https://via.placeholder.com/300x200?text=Foto+6" alt="Foto 6">
-                <img src="img/pin.svg" alt="Puntina" class="pin">
-                <p>Descrizione della Foto 6</p>
-            </div>
-        </div>
+        <div class="photo-board" id="photoBoard"></div>
     </main>
     <footer>
         <p>&copy; 2026 JS Photo Blog</p>
     </footer>
+
+    <!-- Overlay -->
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <button id="closeBtn" class="close-btn">&times;</button>
+            <img id="overlayImage" src="https://via.placeholder.com/400x300?text=Overlay+Image" alt="Overlay Image">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
