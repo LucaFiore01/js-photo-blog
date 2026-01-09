@@ -47,7 +47,7 @@ photos.forEach(photo => {
     
     photoDiv.innerHTML = `
         <img src="${photo.url}" alt="${photo.title}">
-        <img src="img/pin.svg" alt="Puntina" class="pin">
+        <div class="pin"></div>
         <p>${photo.title}</p>
         <p class="date">${photo.date}</p>
     `;

@@ -128,14 +128,15 @@ footer {
 
 .pin {
     position: absolute;
-    top: -10px;
+    top: -8px;
     left: 50%;
     transform: translateX(-50%);
-    width: 10px;
-    height: 10px;
-    
+    width: 16px;
+    height: 16px;
+    background-color: #dc3545;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
-
 
 /* Overlay */
 .overlay {
