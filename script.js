@@ -45,10 +45,6 @@ photos.forEach(photo => {
     const photoDiv = document.createElement('div');
     photoDiv.className = 'photo';
     
-    // Rotazione casuale tra -5 e 5 gradi
-    const randomRotation = (Math.random() * 10 - 5);
-    photoDiv.style.transform = `rotate(${randomRotation}deg)`;
-    
     photoDiv.innerHTML = `
         <img src="${photo.url}" alt="${photo.title}">
         <img src="img/pin.svg" alt="Puntina" class="pin">

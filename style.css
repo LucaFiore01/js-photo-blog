@@ -89,14 +89,14 @@ footer {
     padding: 12px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     margin: 20px;
-    width: 400px;
+    width: 350px;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .photo:hover {
-    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
-    transform: scale(1.05);
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
+    transform: scale(1.15) skewY(-3deg) skewX(2deg);
 }
 
 .photo img {
@@ -128,16 +128,14 @@ footer {
 
 .pin {
     position: absolute;
-    top: -12px;
+    top: -10px;
     left: 50%;
-    transform: translateX(-50%) rotate(-25deg);
-    transition: transform 0.3s ease;
-
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    
 }
 
-.photo:hover .pin {
-    transform: translateX(-50%) rotate(-5deg);
-}
 
 /* Overlay */
 .overlay {
